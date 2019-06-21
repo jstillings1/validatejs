@@ -7,14 +7,13 @@
     -min of 2 chars entered
     -no special characters used
 */
-function validatejs()
-{
+function validatejs() {
   //Get the input from user
   var case1 = document.getElementById("firstName").value;
   var case2 = document.getElementById("lastName").value;
   //setup the regex for each condition on the first name
   /* what it does the /is the start of the pattern, the ^ means read from the front or position 0, the [ means a range is coming, the A - Z is whats allowed, the ] is the end of the allowed ranage. the / ends the pattern
-  */
+   */
   var cap = /^[A-Z]/.test(case1);
   /* what it does the /is the start of the pattern, the ^ means read from the front or position 0, the [ means a range is coming, the A - Z is whats allowed, the a-z is also allowed the 0-9 is also allowed. the ] is the end of the allowed range, the {2, means must be more then a length of 2, and the blank} means no lenght limit. the $ meaans to read to the end of th string and the / ends the pattern*/
   var two = /^[A-Za-z0-9]{2,}$/.test(case1);
@@ -45,7 +44,7 @@ function validatejs()
   };
   //last name verification
   if (cap2) {
-    document.getElementById("output4").innerHTML = case1 + "  " + case2 +" Looking good so far, last name has a capital first letter";
+    document.getElementById("output4").innerHTML = case1 + "  " + case2 + " Looking good so far, last name has a capital first letter";
   } else {
     document.getElementById("output4").innerHTML = "Problems, please use a capitalized last name";
   };
