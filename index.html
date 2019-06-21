@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Author: Jeremiah Stillings
+    Date: 6/21/2019
+    HTML Goal: Display a form that allows user to enter first name and lasat name
+    JS Goal :  Validation to show
+    -First letter capapitalized in both input
+    -min of 2 chars entered
+    -no special characters used
+-->
+
+<head>
+  <meta charset="utf-8">
+  <title>Vanilla JavaScript Validate challenge</title>
+  <script type="text/javascript" src="./validate.js"></script>
+</head>
+
+<body>
+  <h1>Author: Jeremiah Stillings<br>Date: 6/21/2019<br></h1>
+  <section id="photo">
+    <h2>Photo</h2>
+    <div>
+      <img src="images/profile.jpg" title="Test Dumy Photo" alt="Test Dummy Photo" />
+      <p>HTML Goal: Display a form that allows user to enter first name and lasat name<br>
+        JS Goal : Validation to show<br>
+        -First letter capapitalized in both input<br>
+        -min of 2 chars entered<br>
+        -no special characters used<br>
+      </p>
+    </div>
+  </section>
+
+  <section id="personal">
+    <h2>Personal Data</h2>
+    <p>First Name: <input id="firstName" name="firstName" placeholder="Test" type="text" autocomplete="off"></p>
+    <p>Last Name: <input id="lastName" name="lastName" placeholder="Dummy" type="text" autocomplete="off"></p>
+    <input type="button" onclick="validatejs()" value="Verify Me">
+  </section>
+  <section>
+    <h2> This area shows how your doing </h2>
+    <p id="output1"> </p>
+    <p id="output2"> </p>
+    <p id="output3"> </p>
+    <p id="output4"> </p>
+    <p id="output5"> </p>
+    <p id="output6"> </p>
+  </section>
+  <footer>
+    <p> <em>Copyright &copy; 2019 Jeremiah Stillings</em> </p>
+  </footer>
+</body>
+
+</html>
