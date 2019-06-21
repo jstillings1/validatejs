@@ -13,8 +13,12 @@ function validatejs()
   var case1 = document.getElementById("firstName").value;
   var case2 = document.getElementById("lastName").value;
   //setup the regex for each condition on the first name
+  /* what it does the /is the start of the pattern, the ^ means read from the front or position 0, the [ means a range is coming, the A - Z is whats allowed, the ] is the end of the allowed ranage. the / ends the pattern
+  */
   var cap = /^[A-Z]/.test(case1);
+  /* what it does the /is the start of the pattern, the ^ means read from the front or position 0, the [ means a range is coming, the A - Z is whats allowed, the a-z is also allowed the 0-9 is also allowed. the ] is the end of the allowed range, the {2, means must be more then a length of 2, and the blank} means no lenght limit. the $ meaans to read to the end of th string and the / ends the pattern*/
   var two = /^[A-Za-z0-9]{2,}$/.test(case1);
+  /* what it does the /is the start of the pattern,  the [ means a range is coming, the -!$%^&*()_+|~=`{}[:;<>?,.@#\] is what characters we do not waant to find. the / is the end of the pattern and the /g is means to do not stop matching at the first match and come to think of it is probably un-neccessary */
   var nospecial = /[-!$%^&*()_+|~=`{}[:;<>?,.@#\]]/g.test(case1);
   //setup the regex for each conditon on the last name
   var two2 = /^[A-Za-z0-9]{2,}$/.test(case2);
